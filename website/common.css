@@ -1,0 +1,9 @@
+body
+{
+	background-image: url("bg.jpg");
+	background-size: cover;
+}
+td
+{
+	padding:5px;
+}
