@@ -14,9 +14,7 @@ public class BroadcastClient {
         try
         {
             
-          //  addr=InetAddress.getByName("255.255.255.255");
             clientsocket=new MulticastSocket(port);
-            //clientsocket.joinGroup(addr);
             while(true)
             {
 				buf=new byte[256];

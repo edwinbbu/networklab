@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class BroadcastServer {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+       
         DatagramSocket serversocket;
         DatagramPacket packet;
         int port=8888;

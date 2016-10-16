@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Student Registration</title>
+</head>
+<body>
+<h1>Student Registration</h1>
+<form name="form" action="success.cgi" method="POST">
+<table>
+<tr><td>Name:</td><td><input type="text" name="name" required/></td></tr>
+<tr><td>Age:</td><td><input type="number" name="age" required /></td></tr>
+<tr><td>Gender:</td><td><input type="radio" name="gender" value="Male"/>Male</td><td><input type="radio" name="gender" value="Female"/>Female</td></tr>
+<tr><td>Email:</td><td><input type="email" name="email" required/></td></tr>
+<tr><td>Address:</td><td><textarea name="address" rows="4" cols="22"></textarea></td></tr>
+<tr><td>Select Department:</td><td><select name="department"><option>CS</option><option>IT</option><option>EC</option><option>EEE</option></select></td></tr>
+<tr><td></td><td><input type="submit" name="submit" value="Submit"/>&ensp;<input type="reset" name="reset" value="Reset"/></td></tr>
+</table>
+</form>
+</body>
+</html>
+ 
