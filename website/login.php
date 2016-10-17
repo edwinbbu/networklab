@@ -2,36 +2,42 @@
 session_start();
 require "init.php";
 
-if(isset($_POST["username"]))
+if(isset($_POST["username"]) && isset($_POST["password"]))
 {
-  $username=$_POST["username"];
-  
-}
-if(isset($_POST["password"]))
-{
-  $password=$_POST["password"];
+	$username=$_POST["username"];
+  	$password=$_POST["password"];
+	$sql="select username,passwrd from login;";
+	$result=mysqli_query($con,$sql);
+	$user=array();
+	$pass=array();
+	if(!$result)
+	{
+		echo "Error in connection";
+	}
+	else
+	{
+		while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
+		{
+		      $user[]=$row['username'];
+		      $pass[]=$row['passwrd'];
+		}
+	}
+	foreach ($user as $key => $u) {
+
+		if($u==$username)
+		{
+			if($pass[$key]==$password)
+				{
+					$_SESSION['login']=$username;
+					header("Location:welcome.php");
+					mysqli_close($con);
+					exit();
+				}
+		}
+	}
+
 }
 
-$sql="select username,passwrd from login;";
-$result=mysqli_query($con,$sql);
-if(!$result)
-{
-	echo "Error in connection";
-}
-else
-{
-	$obj=mysqli_fetch_object($result);
-	$user=$obj->username;
-	$pass=$obj->passwrd;
-}
-
-if($user==$username && $pass==$password)
-{
-	$_SESSION['login']=$username;
-	header("Location:welcome.php");
-	mysqli_close($con);
-	exit();
-}
 ?>
 <html>
 <head>

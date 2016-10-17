@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
 <title>Homepage</title>
@@ -5,7 +8,6 @@
 </head>
 <body>
 <?php
-session_start();
 if(isset($_SESSION['login']))
     {
     	$user=$_SESSION['login'];
