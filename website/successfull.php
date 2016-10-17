@@ -28,6 +28,6 @@ mysqli_close($con);
 </head>
 <body>
 <h2>Registration successfull</h2>
-<a href="login.php">Back to login page</a>
+<a href="index.php">Back to login page</a>
 </body>
 </html>
