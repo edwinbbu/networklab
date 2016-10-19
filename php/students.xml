@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<name>Edwin Babu</name>
+		<rollno>45</rollno>
+		<totmarks>400</totmarks>
+		<age>21</age>
+		<company>cts</company>
+	</student>
+	<student>
+		<name>Alan George</name>
+		<rollno>13</rollno>
+		<totmarks>420</totmarks>
+		<age>21</age>
+		<company>infosys</company>
+	</student>
+	<student>
+		<name>Betty Sciara</name>
+		<rollno>37</rollno>
+		<totmarks>440</totmarks>
+		<age>21</age>
+		<company>cts</company>
+	</student>
+	<student>
+		<name>Aysha Basheer</name>
+		<rollno>36</rollno>
+		<totmarks>410</totmarks>
+		<age>21</age>
+		<company>infosys</company>
+	</student>
+	<student>
+		<name>Icebin Isaac</name>
+		<rollno>55</rollno>
+		<totmarks>450</totmarks>
+		<age>21</age>
+		<company>incture</company>
+	</student>
+		<student>
+		<name>Gadha Maria</name>
+		<rollno>49</rollno>
+		<totmarks>390</totmarks>
+		<age>21</age>
+		<company>none</company>
+	</student>
+</students>
