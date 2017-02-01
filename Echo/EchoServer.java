@@ -51,8 +51,6 @@ public class EchoServer extends Thread implements ActionListener
         b.addActionListener(this);
 		p2.add(b);
 		
-		
-		
 	}	
 	public static void main(String[] args)
 	{

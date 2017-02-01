@@ -20,7 +20,7 @@ public class BroadcastClient {
 				buf=new byte[256];
                 packet=new DatagramPacket(buf,buf.length);
                 clientsocket.receive(packet);
-                msg=new String(buf,0,buf.length);
+                msg=new String(buf,0,buf.length);	//packet.length
                 System.out.println("From"+packet.getAddress()+" Received:"+msg);
             }
         }
